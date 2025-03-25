@@ -20,7 +20,7 @@ public class Restaurant {
             valid = false;
         }
         Restaurant restaurant = (Restaurant) obj;
-        if(this.name == restaurant.name && this.score == restaurant.score){
+        if(this.name.equalsIgnoreCase(restaurant.name) && this.score == restaurant.score){
             valid = true;
         }
         return valid;
